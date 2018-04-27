@@ -1,6 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <style>
+      input[type=text] {
+         width: 300px;
+         box-sizing: border-box;
+         border: 2px solid #ccc;
+         border-radius: 4px;
+         font-size: 16px;
+         background-color: white;
+         
+         background-position: 10px 10px;
+         background-repeat: no-repeat;
+         padding: 12px 20px 12px 40px;
+         -webkit-transition: width 0.4s ease-in-out;
+         transition: width 0.4s ease-in-out;
+      }</style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -15,18 +30,19 @@
         <form action="actiowelcomn_page.php" style="border:1px solid #ccc">
                 <div class="container">
                   <h1>Sign Up</h1>
+                  <br>
                   <p>Please fill in this form to create an account.</p>
                   <hr>
                   <label for="Name"><b>Name</b></label>
-                  <input type="text" placeholder="Enter name" name="Name" required><b>
+                  <input type="text" placeholder="Enter name" name="Name" required><br>
 
-                  </b>
+                  
               
                   <label for="email"><b>Email</b></label>
-                  <input type="text" placeholder="Enter Email" name="email" required>
+                  <input type="text" placeholder="Enter Email" name="email" required><br>
               
                   <label for="psw"><b>Password</b></label>
-                  <input type="password" placeholder="Enter Password" name="psw" required>
+                  <input type="password" placeholder="Enter Password" name="psw" required><br>
               
                   <label for="psw-repeat"><b>Repeat Password</b></label>
                   <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
@@ -44,13 +60,14 @@
                             <form action="action_page.php">
                                                                       
                                     <div class="container">
-                                      <label for="uname"><b>Username</b></label>
+                                      <label for="uname"><b>Username</b></label><br>
                                       <input type="text" placeholder="Enter Username" name="uname" required>
                                   
-                                      <label for="psw"><b>Password</b></label>
-                                      <input type="password" placeholder="Enter Password" name="psw" required>
+                                      <label for="psw"><b>Password</b></label><br>
+                                      <input type="password" placeholder="Enter Password" name="psw" required><br>
                                   
-                                      <button type="submit">Login</button>
+                                      <a href="home.html"submit">Login</button>
+                                      l
                                       <label>
                                         <input type="checkbox" checked="checked" name="remember"> Remember me
                                       </label>

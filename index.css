@@ -103,14 +103,7 @@ body{
  width:20%;
  text-align:center;
 }
-.menu a {
- background-color:#e5e5e5;
- padding:8px;
- margin-top:7px;
- display:block;
- width:100%;
- color:black;
-}
+
 
 
 
@@ -124,7 +117,7 @@ body{
    vertical-align: middle;
 }
 
-.pageHeading{
+.container{
    overflow: hidden;
    white-space: nowrap;
    width: 100%;

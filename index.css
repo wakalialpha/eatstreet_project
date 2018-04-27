@@ -1,0 +1,171 @@
+
+
+body{
+   font-family:Verdana;
+   width: 100%;
+   background-color: 
+}
+
+
+
+
+
+.menu a {
+ background-color:#e5e5e5;
+ padding:8px;
+ margin-top:7px;
+ display:block;
+ width:100%;
+ color:black;
+}
+
+
+
+#liner{
+   display:inline-block;
+}
+#max_width{
+   width: 100%;
+}
+#middle{
+   vertical-align: middle;
+}
+
+.pageHeading{
+   overflow: hidden;
+   white-space: nowrap;
+   width: 100%;
+   white-space: nowrap;
+   background-color:#0f97d0;
+   color:white;
+   padding:15px;
+   text-align:center;
+}
+.main {
+ float:left;
+ width:60%;
+ padding:0 20px;
+}
+.right {
+ background-color:#e5e5e5;
+ float:left;
+ width:20%;
+ padding:15px;
+ margin-top:7px;
+ text-align:center;
+}
+
+@media only screen and (max-width:620px) {
+ /* For mobile phones: */
+ .menu, .main, .right {
+   width:100%;
+ }
+}
+
+.footer{
+   text-align:center;
+   padding:10px;
+   margin-top:7px;
+}
+
+
+
+
+
+
+
+
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+   span.psw {
+      display: block;
+      float: none;
+   }
+   .cancelbtn {
+      width: 100%;
+   }
+}
+* {
+ box-sizing: border-box;
+}
+
+body{
+   font-family:Verdana;
+   width: 100%;
+}
+
+
+
+
+.menu {
+ float:left;
+ width:20%;
+ text-align:center;
+}
+.menu a {
+ background-color:#e5e5e5;
+ padding:8px;
+ margin-top:7px;
+ display:block;
+ width:100%;
+ color:black;
+}
+
+
+
+#liner{
+   display:inline-block;
+}
+#max_width{
+   width: 100%;
+}
+#middle{
+   vertical-align: middle;
+}
+
+.pageHeading{
+   overflow: hidden;
+   white-space: nowrap;
+   width: 100%;
+   white-space: nowrap;
+   background-color:#0f97d0;
+   color:white;
+   padding:15px;
+   text-align:center;
+}
+.main {
+ float:left;
+ width:60%;
+ padding:0 20px;
+}
+.right {
+ background-color:#e5e5e5;
+ float:left;
+ width:20%;
+ padding:15px;
+ margin-top:7px;
+ text-align:center;
+}
+
+@media only screen and (max-width:620px) {
+ /* For mobile phones: */
+ .menu, .main, .right {
+   width:100%;
+ }
+}
+
+.footer{
+   text-align:center;
+   padding:10px;
+   margin-top:7px;
+}
+
+
+
+
+
+
+
+
+

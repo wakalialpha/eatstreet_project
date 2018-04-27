@@ -1,0 +1,19 @@
+<html>
+<body>
+<div class="container">
+	<div onload="searchRestaurants(ESApi.init('897727934cddde76'))">
+		<form action="publicapi/v1/restaurant/search">
+		    <input type="text" name="script" placeholder="search">
+		    <script>
+			    (function() {
+			        var es = document.createElement('script'); es.type = 'text/javascript'; es.async = true;
+			        es.src = ('https:' == document.location.protocol ? 'https://' : 'http://developers.') + 'eatstreet.com/api-js-sdk/js/sdk-remote.js';
+			        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(es, s);
+			    })();
+			</script>
+		</form>
+	</div>
+</div>
+<script src="/search_restaurants.js"></script>
+</body>
+</html>

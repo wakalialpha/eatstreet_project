@@ -7,6 +7,7 @@ function postData(url, data) {
     headers: {
       'user-agent': 'Mozilla/4.0 MDN Example',
       'content-type': 'application/json',
+      'X-Access-Token': 'a26338a935c8999d'
     },
     method: 'POST', // *GET, POST, PUT, DELETE, etc.
     mode: 'cors', // no-cors, cors, *same-origin
@@ -32,6 +33,11 @@ function getData(url) {
     referrer: 'no-referrer', // *client, no-referrer
   })
   .then(response => response.json()) // parses response to JSON
+}
+
+function searchTestWithGet() {
+	var url = "https://api.eatstreet.com/publicapi/v1/search-test?access-token=a26338a935c8999d"
+	getData(url);
 }
 
 function searchTest() {

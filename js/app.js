@@ -24,6 +24,7 @@ function getData(url) {
     headers: {
       'user-agent': 'Mozilla/4.0 MDN Example',
       'content-type': 'application/json',
+      'X-Access-Token': 'a26338a935c8999d'
     },
     method: 'GET', // *GET, POST, PUT, DELETE, etc.
     mode: 'cors', // no-cors, cors, *same-origin
@@ -34,10 +35,7 @@ function getData(url) {
 }
 
 function searchTest() {
-	// getData('https://api.eatstreet.com/publicapi/v1/search-test?access-token=a26338a935c8999d')
-	//   .then(data => console.log(data)) // JSON from `response.json()` call
-	//   .catch(error => console.error(error));
-	url = "https://api.eatstreet.com/publicapi/v1/search-test?access-token=a26338a935c8999d"
+	var url = "https://api.eatstreet.com/publicapi/v1/search-test?access-token=a26338a935c8999d"
 	fetch(url).then(function (response) {
 	    return response.json();
 	}).then(function (json) {
@@ -46,6 +44,15 @@ function searchTest() {
 }
 
 function registerUser() {
+	var url = "https://api.eatstreet.com/publicapi/v1/register-user?access-token=a26338a935c8999d";
+	var newUser = {
+	    'email': 'newuser@eatstreet.com',
+	    'password': 'password',
+	    'firstName': 'New',
+	    'lastName': 'User',
+	    'phone': '6086667777'
+	};	
+	postData(url, newUser);
 }
 
 document.body.onload = searchTest;
